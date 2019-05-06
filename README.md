@@ -4,7 +4,9 @@ To do so you'll need to provide a trusted certificate to your server.
 It's not possible to generate a trusted certificate for localhost by using services like Let's Encrypt (localhost is not a unique domain name).  
 The only solution is to generate self signed certificate and have it manually trusted by your browser.  
 This repo provides a simple script to generate such a certificate.  
-Here's how to proceed to have an nginx running locally with working https request on localhost through Chrome browser.
+Here's how to proceed to have an nginx running locally with working https request on localhost through Chrome browser.  
+  
+__Note : this repository is based on https://github.com/dakshshah96/local-cert-generator/ work. I've simply wrapped it in a docker image and created a script to launch it to make it easier to use, all props to him !__
 
 
 ## 1 - Prepare the certificates
