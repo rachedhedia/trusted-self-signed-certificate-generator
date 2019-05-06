@@ -9,7 +9,7 @@ Here's how to proceed to have an nginx running locally with working https reques
 
 ## 1 - Prepare the certificates
 The only prerequesite is to have docker installed on your machine.  
-Next you must clone this repository : https://github.com/rhedia/trusted-self-signed-certificate-generator.git
+Next you must clone this repository : https://github.com/rhedia/trusted-self-signed-certificate-generator.git  
 Move to the newly created trusted-self-signed-certificate-generator folder
 Then simply call generate-certificate.cmd.  
 You'll be prompted several times to enter the generated certificate details, you can fill as follow:
