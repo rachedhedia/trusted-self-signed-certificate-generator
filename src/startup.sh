@@ -4,4 +4,4 @@ sh createRootCA.sh
 sh createSelfSigned.sh 
 cp rootCA.pem /export 
 cp server.key /export 
-cp server.csr /export 
+cp server.crt /export 
