@@ -11,12 +11,12 @@ __Note : this repository is based on https://github.com/dakshshah96/local-cert-g
 
 ## 1 - Prepare the certificates
 The only prerequesite is to have docker installed on your machine.  
-Next you must clone this repository : https://github.com/rhedia/trusted-self-signed-certificate-generator.git  
-Move to the newly created trusted-self-signed-certificate-generator folder
+Next you must __clone this repository__ : https://github.com/rhedia/trusted-self-signed-certificate-generator.git  
+Move to the newly created __trusted-self-signed-certificate-generator folder__  
 Then simply call __generate-certificate.cmd__ or __generate-certificate.sh__ if you're on unix.  
 You'll be prompted several times to enter the generated certificate details, you can fill as follow:
 
-For the first 3 questions, simply enter three time the same password and keep track of it, you'll be prompted for it once more at the end
+For the first 3 questions, simply enter __three times the same password__ and keep track of it, you'll be prompted for it once more at the end
 ~~~
 Enter pass phrase for rootCA.key:
 Verifying - Enter pass phrase for rootCA.key:
