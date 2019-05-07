@@ -1,9 +1,9 @@
 # The problem
-Let's say you want to install a local web server (nginx for instance) and you want to perform https request on it (you'll most likely do this during development phase).  
-To do so you'll need to provide a trusted certificate to your server.  
-It's not possible to generate a trusted certificate for localhost by using services like Let's Encrypt (localhost is not a unique domain name).  
-The only solution is to generate self signed certificate and have it manually trusted by your browser.  
-This repo provides a simple script to generate such a certificate.  
+Let's say you want to install a __local web server__ (nginx for instance) and you want to perform __https request on it__ (you'll most likely do this during development phase).  
+To do so you'll need to __provide a trusted certificate__ to your server.  
+It's __not possible to generate a trusted certificate for localhost__ by using services like __Let's Encrypt__ (localhost is not a unique domain name).  
+The only solution is to __generate self signed certificate__ and have it manually trusted by your browser.  
+__This repo provides a simple script to generate such a certificate.__  
 Here's how to proceed to have an nginx running locally with working https request on localhost through Chrome browser.  
   
 __Note : this repository is based on https://github.com/dakshshah96/local-cert-generator/ work. I've simply wrapped it in a docker image and created a script to launch it to make it easier to use, all props to him !__
