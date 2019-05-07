@@ -51,8 +51,8 @@ Once finished, you should have 3 new file in your current : rootCA.pem, server.c
 
 ## 3 - Configure your server to serve the right certificate (example with Nginx)
 * Modify your nginx server config file to modify the following lines:
-  * ssl_certificate --> put the path to the server.crt file that has been generated in step 1 - you may want to move it somewhere in your nginx installation folder;
-	* ssl_certificate_key --> put the path to the server.key file that has been generated in step 1 - you may want to move it somewhere in your nginx installation folder;
-  * Restart nginx
-  * Try requesting your server @ https://localhost, it should be working !
+  * __ssl_certificate__ --> put the path to the server.crt file that has been generated in step 1 - you may want to move it somewhere in your nginx installation folder;
+  * __ssl_certificate_key__ --> put the path to the server.key file that has been generated in step 1 - you may want to move it somewhere in your nginx installation folder;
+* Restart nginx
+* Try requesting your server @ https://localhost, it should be working !
 
