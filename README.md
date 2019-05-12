@@ -8,6 +8,8 @@ Here's how to proceed to have an nginx running locally with working https reques
   
 __Note : this repository is based on https://github.com/dakshshah96/local-cert-generator/ work. I've simply wrapped it in a docker image and created a script to launch it to make it easier to use, all props to him !__
 
+This has been tested with Chrome version 74.0.3729.131, and it works properly
+
 
 ## 1 - Prepare the certificates
 The only prerequesite is to have docker installed on your machine.  
@@ -56,3 +58,9 @@ Once finished, you should have 3 new file in your current : rootCA.pem, server.c
 * Restart nginx
 * Try requesting your server @ https://localhost, it should be working !
 
+## 4 - Troubleshooting
+If you still have a security error message, make sure:
+* You filled the information during the certificate creation as given above
+* You correctly added the root certificate to chrome list of trusted certificate authorities
+* Close all your opened chrome browser, open a new one, go to parameter/advanced/clear navigation data, go to advanced and clear all the data for the previous 24h, then close the browser and reopen a new one and try again
+* Open the developer tools/security to check the error - Ctrl + Maj + I or parameters/more tools/developer tools and check the error details
